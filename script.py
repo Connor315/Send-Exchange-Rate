@@ -104,7 +104,7 @@ def send(email_addresses):
 
     smtpObj.ehlo()
     smtpObj.starttls()
-    smtpObj.login('lhpiven@outlook.com', "520lhp+.")
+    smtpObj.login('', "")
     for email in email_addresses:
         smtpObj.sendmail('lhpiven@outlook.com', email, msg.as_string())
     smtpObj.quit()
